@@ -1241,7 +1241,7 @@ a {
   padding-bottom: 0;
 }
 .section-member-sub-wrap {
-  min-width: 335px;
+  width: 335px;
   margin-right: 40px;
 }
 
@@ -1342,7 +1342,7 @@ a {
 .sidebar-sub-li:hover {
   border-left: 2px solid red;
 }
-.sidebar-sub-span{
+.sidebar-sub-span {
   margin-right: 8px;
   font-size: 8px;
 }
