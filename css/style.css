@@ -102,6 +102,11 @@ a {
   border: none;
 } */
 
+.header-nav-2-a {
+  color: #0c0c0c;
+  font-weight: 600;
+  border-bottom: 1px solid #ffffff;
+}
 @media screen and (min-width: 1280px) {
   .header-logo-img {
     width: 260px;
@@ -148,11 +153,12 @@ a {
     align-items: center;
     list-style: none;
   }
-
+  .header-nav-2-li {
+    margin-left: 40px;
+  }
   .header-nav-2-a {
     color: #0c0c0c;
     font-weight: 600;
-    margin-left: 40px;
   }
 }
 
@@ -206,6 +212,7 @@ a {
   display: flex;
   align-items: center;
   transition: color 0.15s;
+  border-bottom: #fff solid 1px;
 }
 .link:hover,
 .link:focus {
@@ -221,11 +228,8 @@ a {
 .dropDown {
   position: absolute;
   padding-left: 0;
-  width: 125px;
-  top: 0 !important;
-  opacity: 0;
+  display: none;
   background-color: #fff;
-  box-shadow: 0px 3px 8px -2px #777;
   color: initial;
   transform: translate(0, 100%);
   z-index: 10;
@@ -244,6 +248,12 @@ a {
   flex-direction: column;
   list-style: none;
   padding: 16px 16px;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  width: 125px;
+  background-color: #fff;
+  box-shadow: 0px 3px 8px -2px #777;
 }
 
 .dropDown__link {
@@ -1325,6 +1335,17 @@ a {
   color: #acacac;
 }
 
+.sidebar-sub-a:hover {
+  color: red;
+}
+
+.sidebar-sub-li:hover {
+  border-left: 2px solid red;
+}
+.sidebar-sub-span{
+  margin-right: 8px;
+  font-size: 8px;
+}
 .sidebar-notice-li {
   margin-bottom: 16px;
 }
@@ -1337,4 +1358,3 @@ a {
   color: #000;
   border-bottom: #000 1px solid;
 }
-/*  */
