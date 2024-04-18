@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="ディスクリプション" />
+    <title>テストページ</title>
+    <!--ページCSSの読み込み-->
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--OGP設定-->
+    <meta property="og:title" content="日本自走式駐車場工業会" />
+    <meta property="og:description" content="ディスクリプション" />
+    <meta property="og:image" content="画像URL" />
+    <meta property="og:image:secure_url" content="画像URL" />
+    <meta property="og:url" content="サイトURL" />
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:title" content="タイトル" />
+    <meta name="twitter:description" content="ディスクリプション" />
+    <meta name="twitter:image" content="画像URL" />
+    <meta name="twitter:card" content="summary" />
+    <!--favicon設定-->
+    <link rel="icon" href="/favicon.ico" />
+    <!-- 32×32 -->
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- モバイルChromeのヘッダー色などで使われるテーマカラー   -->
+    <meta name="theme-color" content="#fafafa" />
+    <!-- script -->
+    <script src="/js/hamburger.js" defer></script>
+    <script src="/js/kv-slide.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-wrap">
+        <div class="header-top-wrap">
+          <h1 class="header-logo-wrap">
+            <img
+              src="/img/logo-1.png"
+              alt="ロゴ"
+              width="174px"
+              height="32px"
+              class="header-logo-img"
+            />
+          </h1>
+        </div>
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="header-nav">
+          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+          <input id="drawer_input" class="drawer_hidden" type="checkbox" />
+          <!-- ハンバーガーアイコン -->
+          <label for="drawer_input" class="drawer_open"><span></span></label>
+          <div class="header-bottom-wrap">
+            <nav class="header-nav-1">
+              <ul class="header-nav-1-ul">
+                <li class="header-nav-1-li">
+                  <a class="header-nav-1-a" href="/coming-soon.html">
+                    お知らせ</a
+                  >
+                </li>
+                <li class="header-nav-1-li">
+                  <a class="header-nav-1-a" href="/coming-soon.html">
+                    よくあるご質問</a
+                  >
+                </li>
+                <li class="header-nav-1-li">
+                  <a class="header-nav-1-a" href="/coming-soon.html"
+                    >お問い合わせ</a
+                  >
+                </li>
+                <button class="header-nav-1-button" href="/coming-soon.html">
+                  ログイン
+                </button>
+              </ul>
+            </nav>
+
+            <nav class="header-nav-2">
+              <ul class="header-nav-2-ul">
+                <li class="header-nav-2-li">
+                  <a class="header-nav-2-a link link-hover" href="/page.html">
+                    工業会について
+                  </a>
+                  <div class="dropDown">
+                    <ul class="dropDown__list">
+                      <li class="dropDown__item">
+                        <a href="/page.html" class="dropDown__link"
+                          >理事長ご挨拶</a
+                        >
+                      </li>
+                      <li class="dropDown__item">
+                        <a href="/page.html" class="dropDown__link">組織</a>
+                      </li>
+                      <li class="dropDown__item">
+                        <a href="/page.html" class="dropDown__link">沿革</a>
+                      </li>
+                      <li class="dropDown__item">
+                        <a href="/page.html" class="dropDown__link">会員紹介</a>
+                      </li>
+                      <li class="dropDown__item">
+                        <a href="/page.html" class="dropDown__link">アクセス</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header-nav-2-li">
+                  <a
+                    class="header-nav-2-a link link-hover"
+                    href="/coming-soon.html"
+                    >自走式駐車場とは</a
+                  >
+                  <div class="dropDown">
+                    <ul class="dropDown__list">
+                      <li class="dropDown__item">
+                        <a href="/coming-soon.html" class="dropDown__link"
+                          >自走式駐車場について</a
+                        >
+                      </li>
+                      <li class="dropDown__item">
+                        <a href="/coming-soon.html" class="dropDown__link"
+                          >国土交通大臣認定とは</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header-nav-2-li">
+                  <a
+                    class="header-nav-2-a link link-hover"
+                    href="/coming-soon.html"
+                    >取り組み</a
+                  >
+                  <div class="dropDown">
+                    <ul class="dropDown__list">
+                      <li class="dropDown__item">
+                        <a href="/coming-soon.html" class="dropDown__link"
+                          >一覧をみる</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header-nav-2-li">
+                  <a
+                    class="header-nav-2-a link link-hover"
+                    href="/coming-soon.html"
+                    >刊行物</a
+                  >
+                  <div class="dropDown">
+                    <ul class="dropDown__list">
+                      <li class="dropDown__item">
+                        <a href="/coming-soon.html" class="dropDown__link"
+                          >日本自走式駐車場工業会会報誌「ぷれぱ」</a
+                        >
+                      </li>
+                      <li class="dropDown__item">
+                        <a href="/coming-soon.html" class="dropDown__link"
+                          >駐車場関連4団体連携「駐車場便覧」</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-sp-hamburger-wrap header_nav_content">
+            <div class="footer-wrap">
+              <div class="footer-nav header_nav_list">
+                <nav class="footer-nav">
+                  <h3 class="footer-nav-title" href="/page.html">
+                    工業会について
+                  </h3>
+                  <ul class="footer-nav-ul">
+                    <li class="footer-nav-li">
+                      <a href="/page.html" class="footer-nav-a header-nav-1-a"
+                        >理事長ご挨拶</a
+                      >
+                    </li>
+                    <li class="footer-nav-li">
+                      <a href="/page.html" class="footer-nav-a header-nav-1-a"
+                        >組織</a
+                      >
+                    </li>
+                    <li class="footer-nav-li">
+                      <a href="/page.html" class="footer-nav-a header-nav-1-a"
+                        >沿革</a
+                      >
+                    </li>
+                    <li class="footer-nav-li">
+                      <a href="/page.html" class="footer-nav-a header-nav-1-a"
+                        >会員紹介</a
+                      >
+                    </li>
+                    <li class="footer-nav-li">
+                      <a href="/page.html" class="footer-nav-a header-nav-1-a"
+                        >アクセス</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-nav-wrap">
+                <nav class="footer-nav">
+                  <h3 class="footer-nav-title">自走式駐車場とは</h3>
+                  <ul class="footer-nav-ul">
+                    <li class="footer-nav-li">
+                      <a
+                        href="/coming-soon.html"
+                        class="footer-nav-a header-nav-2-a"
+                        >自走式駐車場について</a
+                      >
+                    </li>
+                    <li class="footer-nav-li">
+                      <a
+                        href="/coming-soon.html"
+                        class="footer-nav-a header-nav-2-a"
+                        >国土交通大臣認定とは</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-nav-wrap">
+                <nav class="footer-nav">
+                  <h3 class="footer-nav-title">取り組み</h3>
+                  <ul class="footer-nav-ul">
+                    <li class="footer-nav-li">
+                      <a href="/coming-soon.html#" class="footer-nav-a"
+                        >一覧を見る</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-nav-wrap">
+                <nav class="footer-nav">
+                  <h3 class="footer-nav-title">刊行物</h3>
+                  <ul class="footer-nav-ul">
+                    <li class="footer-nav-li">
+                      <a
+                        href="/coming-soon.html"
+                        class="footer-nav-a header-hambager-nav-a"
+                        >日本自走式駐車場工業会会報誌「ぷれぱ」</a
+                      >
+                    </li>
+                    <li class="footer-nav-li">
+                      <a href="/coming-soon.html" class="footer-nav-a"
+                        >駐車場関連4団体連携「駐車場便覧」</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="footer-nav-sub">
+              <nav class="footer-nav-sub-nav">
+                <ul class="footer-nav-sub-ul header-hamburger-sub-ul">
+                  <li class="footer-nav-sub-li footer-nav-sub-li-first">
+                    <a href="/coming-soon.html" class="footer-nav-sub-a"
+                      >お知らせ</a
+                    >
+                  </li>
+                  <li class="footer-nav-sub-li">
+                    <a href="/coming-soon.html" class="footer-nav-sub-a"
+                      >よくあるご質問</a
+                    >
+                  </li>
+                  <li class="footer-nav-sub-li">
+                    <a href="/coming-soon.html" class="footer-nav-sub-a"
+                      >お問い合わせ</a
+                    >
+                  </li>
+                  <li class="footer-nav-sub-li">
+                    <a href="/coming-soon.html" class="footer-nav-sub-a"
+                      >アクセス</a
+                    >
+                  </li>
+                </ul>
+                <ul class="footer-nav-sub-ul header-hamburger-sub-ul">
+                  <li class="footer-nav-sub-li footer-nav-sub-li-first">
+                    <a href="/coming-soon.html" class="footer-nav-sub-a"
+                      >関連リンク</a
+                    >
+                  </li>
+                  <li class="footer-nav-sub-li">
+                    <a href="/coming-soon.html" class="footer-nav-sub-a"
+                      >YouTube</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <button class="header-nav-1-button">会員ログイン</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="top-main">
+      <div class="kv">
+        <div class="image-gallery kv-wrap">
+          <div class="container kv-slide" id="image-slider">
+            <div class="image-item kv-slide-wrap">
+              <img src="/img/Park.15_0.png" alt="画像1" class="kv-img" />
+            </div>
+            <div class="image-item kv-slide-wrap">
+              <img src="/img/drone.png" alt="画像2" class="kv-img" />
+            </div>
+            <div class="image-item kv-slide-wrap">
+              <img src="/img/personal_mobile.png" alt="画像3" class="kv-img" />
+            </div>
+            <div class="image-item kv-slide-wrap">
+              <img src="/img/kv.png" alt="画像4" class="kv-img" />
+            </div>
+          </div>
+          <ul class="kv-indicator" id="indicator">
+            <li class="kv-li"></li>
+            <li class="kv-li"></li>
+            <li class="kv-li"></li>
+            <li class="kv-li"></li>
+          </ul>
+        </div>
+        <div class="kv-info">
+          <div class="kv-info-main">重要なお知らせ</div>
+          <div class="kv-info-txt">
+            令和６年能登半島地震支援へのご寄付について
+          </div>
+        </div>
+      </div>
+
+      <section class="attempt">
+        <div class="attempt-main">
+          <h2 class="attempt-main-title">取り組み</h2>
+          <div class="attempt-main-kv">
+            <img src="/img/teian.png" alt="" class="attempt-main-kv-img" />
+          </div>
+          <h3 class="attempt-main-txt">
+            自走式駐車場をより長くご利用いただくためのご提案
+          </h3>
+        </div>
+        <div class="attempt-sub-article-wrap attempt-sub-top-wrap">
+          <article class="attempt-sub-first">
+            <div class="attempt-sub-img">
+              <img
+                src="/img/sustainable_visual.png"
+                alt="記事"
+                class="attempt-sub-img-img"
+              />
+            </div>
+            <div class="attempt-sub-txt">
+              <h3 class="attempt-sub-txt-title">SDGsと自走式立体駐車場</h3>
+              <!-- <p class="attempt-sub-txt-txt">NEW</p> -->
+            </div>
+          </article>
+          <article class="attempt-sub">
+            <div class="attempt-sub-img">
+              <img
+                src="/img/white.png"
+                alt="記事"
+                class="attempt-sub-img-img"
+              />
+            </div>
+            <div class="attempt-sub-txt">
+              <h3 class="attempt-sub-txt-title">
+                まちづくりへの参画・貢献『あなたのまちの困りごと、自走式駐車場が解決をお手伝いします』
+              </h3>
+              <!-- <p class="attempt-sub-txt-txt">NEW</p> -->
+            </div>
+          </article>
+          <article class="attempt-sub">
+            <div class="attempt-sub-img">
+              <img
+                src="/img/fase-free.png"
+                alt="記事"
+                class="attempt-sub-img-img"
+              />
+            </div>
+            <div class="attempt-sub-txt">
+              <h3 class="attempt-sub-txt-title">
+                『フェーズフリー』な施設として
+              </h3>
+              <!-- <p class="attempt-sub-txt-txt">NEW</p> -->
+            </div>
+          </article>
+        </div>
+        <div class="attempt-sub-article-wrap">
+          <article class="attempt-sub-first">
+            <div class="attempt-sub-img">
+              <img
+                src="/img/disaster_countermeasures.png"
+                alt="記事"
+                class="attempt-sub-img-img"
+              />
+            </div>
+            <div class="attempt-sub-txt">
+              <h3 class="attempt-sub-txt-title">災害対策の推進</h3>
+              <!-- <p class="attempt-sub-txt-txt">NEW</p> -->
+            </div>
+          </article>
+          <article class="attempt-sub">
+            <div class="attempt-sub-img">
+              <img
+                src="/img/solar.png"
+                alt="記事"
+                class="attempt-sub-img-img"
+              />
+            </div>
+            <div class="attempt-sub-txt">
+              <h3 class="attempt-sub-txt-title">SDGsに質する取り組み</h3>
+              <!-- <p class="attempt-sub-txt-txt">NEW</p> -->
+            </div>
+          </article>
+          <article class="attempt-sub">
+            <div class="attempt-sub-img">
+              <img
+                src="/img/youtube.png"
+                alt="記事"
+                class="attempt-sub-img-img"
+              />
+            </div>
+            <div class="attempt-sub-txt">
+              <h3 class="attempt-sub-txt-title">YouTube動画一覧</h3>
+              <!-- <p class="attempt-sub-txt-txt">NEW</p> -->
+            </div>
+          </article>
+        </div>
+        <div class="all-button-wrap">
+          <button class="all-button">一覧を見る</button>
+        </div>
+      </section>
+      <section class="daijin">
+        <div class="daijin-wrap">
+          <div class="daijin-main">
+            <h2 class="daijin-main-title">国土交通大臣認定</h2>
+            <p class="daijin-main-txt">
+              主要構造部の構造方法や特定防火設備の内容について、指定性能評価機関の防災性能評価を受け、これに基づく国土交通大臣による「耐火建築物」の認定を指し、一般的に「防耐火の認定」と言われます。<br />
+              <br />
+              防耐火における高い安全性が担保されているため、主要構造部の耐火被覆を必要とせず、消火設備も簡易に出来ることなどから、一般的に低コストの建築が可能となっています。
+            </p>
+            <div class="detail-button-wrap">
+              <button class="detail-button">詳細はこちら</button>
+            </div>
+          </div>
+          <div class="daijin-img">
+            <img
+              src="/img/kokudokoutsusho.png"
+              alt="認定証"
+              class="daijin-img-img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="disaster">
+        <div class="disaster-wrap">
+          <div class="disaster-main">
+            <h2 class="disaster-main-title">
+              自走式駐車場が3.11の震災時に耐えた映像
+            </h2>
+          </div>
+          <div class="disaster-sub-wrap">
+            <div class="disaster-sub-movie">
+              <iframe
+                width="310"
+                height="174"
+                src="https://www.youtube.com/embed/5gELOQf_pMc"
+                title="東日本大震災大津波　イオン多賀城店  Tsunami attack in Japan"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="disaster-sub-txt">
+              <p class="disaster-sub-txt-detail">
+                自走式立体駐車場は、国土交通大臣の認定を受ける前提として、原則として外壁を設けない開放された構造になっています。これは火災発生時の煙の蓄積によるフラッシュオーバー防止を目的としており、開放性を確保することで、火災の被害を抑える構造となっています。<br />
+                <br />
+                今回の巨大津波では、その開放性が幸いし、建物の広い開放部を津波が通り抜けかつ戻ることができる構造により、津波の力を受け流しました。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="information" id="top-information">
+        <h2 class="information-main-title">お知らせ</h2>
+        <div class="information-tab-wrap">
+          <ul class="information-tab-ul">
+            <li class="information-tab-li">
+              <button
+                class="information-tab-button selected"
+                id="temporary"
+                aria-selected="true"
+              >
+                一般の方向け
+              </button>
+            </li>
+            <li class="information-tab-li">
+              <button
+                class="information-tab-button"
+                id="membership"
+                aria-selected="false"
+              >
+                会員の方向け
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="information-date">2024/02/01</div>
+        <div class="information-title">
+          事前審査時の工業会推薦書が一部変更になりました
+        </div>
+        <div class="information-date">2024/02/01</div>
+        <div class="information-title">
+          認定品表示板の交付状況(2024年1月～3月)を更新しました。
+        </div>
+        <div class="information-date">2024/02/01</div>
+        <div class="information-title information-title-last">
+          会員専用ページの事前審査の予約状況（件数）を更新しました。テキストが入ります。テキストが入ります。
+        </div>
+        <div class="all-button-wrap">
+          <button class="all-button">一覧を見る</button>
+        </div>
+      </section>
+      <section class="mail_magazine">
+        <div class="mail_magazine-wrap frame-box-001 box corner-frame">
+          <span class="corner top-left"></span>
+          <!-- 上左 -->
+          <span class="corner top-right"></span>
+          <!-- 上右 -->
+          <span class="corner bottom-right"></span>
+          <!-- 下右 -->
+          <span class="corner bottom-left"></span>
+          <!-- 下左 -->
+          <h2 class="mail_magazine-title">メルマガ登録のご案内</h2>
+          <p class="mail_magazine-txt">
+            メールマガジンにご登録いただくと、お知らせ（一般の方向け）の新着情報をいち早くお知らせします。この機会にぜひご登録ください。
+          </p>
+          <div class="detail-button-wrap">
+            <button class="detail-button">メルマガ登録する</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="footer-logo">
+          <img
+            src="/img/logo-1.png"
+            alt="ロゴ"
+            class="footer-logo-img"
+            width="253.5px"
+          />
+        </div>
+        <div class="footer-nav-wrap">
+          <nav class="footer-nav">
+            <h3 class="footer-nav-title">工業会について</h3>
+            <ul class="footer-nav-ul">
+              <li class="footer-nav-li">
+                <a href="/page.html" class="footer-nav-a">理事長ご挨拶</a>
+              </li>
+              <li class="footer-nav-li">
+                <a href="/page.html" class="footer-nav-a">組織</a>
+              </li>
+              <li class="footer-nav-li">
+                <a href="/page.html" class="footer-nav-a">沿革</a>
+              </li>
+              <li class="footer-nav-li">
+                <a href="/page.html" class="footer-nav-a">会員紹介</a>
+              </li>
+              <li class="footer-nav-li">
+                <a href="/page.html" class="footer-nav-a">アクセス</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-nav-wrap">
+          <nav class="footer-nav">
+            <h3 class="footer-nav-title">自走式駐車場とは</h3>
+            <ul class="footer-nav-ul">
+              <li class="footer-nav-li">
+                <a href="/coming-soon.html" class="footer-nav-a"
+                  >自走式駐車場について</a
+                >
+              </li>
+              <li class="footer-nav-li">
+                <a href="/coming-soon.html" class="footer-nav-a"
+                  >国土交通大臣認定とは</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-nav-wrap">
+          <nav class="footer-nav">
+            <h3 class="footer-nav-title">取り組み</h3>
+            <ul class="footer-nav-ul">
+              <li class="footer-nav-li">
+                <a href="#" class="footer-nav-a">一覧を見る</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-nav-wrap">
+          <nav class="footer-nav">
+            <h3 class="footer-nav-title">刊行物</h3>
+            <ul class="footer-nav-ul">
+              <li class="footer-nav-li">
+                <a href="/coming-soon.html" class="footer-nav-a"
+                  >日本自走式駐車場工業会会報誌「ぷれぱ」</a
+                >
+              </li>
+              <li class="footer-nav-li">
+                <a href="/coming-soon.html" class="footer-nav-a"
+                  >駐車場関連4団体連携「駐車場便覧」</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-nav-sub">
+        <nav class="footer-nav-sub-nav">
+          <ul class="footer-nav-sub-ul">
+            <li class="footer-nav-sub-li">
+              <a href="/coming-soon.html" class="footer-nav-sub-a">お知らせ</a>
+            </li>
+            <li class="footer-nav-sub-li">
+              <a href="/coming-soon.html" class="footer-nav-sub-a"
+                >よくあるご質問</a
+              >
+            </li>
+            <li class="footer-nav-sub-li">
+              <a href="/coming-soon.html" class="footer-nav-sub-a"
+                >お問い合わせ</a
+              >
+            </li>
+            <li class="footer-nav-sub-li">
+              <a href="/page.html" class="footer-nav-sub-a">アクセス</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-sub-ul ul-2">
+            <li class="footer-nav-sub-li">
+              <a href="/coming-soon.html" class="footer-nav-sub-a"
+                >関連リンク</a
+              >
+            </li>
+            <li class="footer-nav-sub-li">
+              <a href="/coming-soon.html" class="footer-nav-sub-a">YouTube</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="copy">
+        <small
+          >Copy right &copy; 2024 一般社団法人日本自走式駐車場工業会 All Rights
+          Reserved</small
+        >
+      </div>
+    </footer>
+  </body>
+</html>
