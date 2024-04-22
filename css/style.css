@@ -1765,3 +1765,115 @@ a {
   color: #000;
   border-bottom: #000 1px solid;
 }
+
+/* page-question */
+
+.accordion {
+  max-inline-size: 640px;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26.1px;
+  letter-spacing: 0.075em;
+  text-align: left;
+
+  --background: var(--color-base);
+  --background-active: color-mix(in srgb, var(--background) 80%, white);
+  --duration: 1s;
+
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  color: var(--color-white);
+  text-decoration: unset;
+  background-color: var(--background);
+  transition: background-color var(--duration);
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &:focus-visible {
+    background-color: var(--background-active);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--background-active);
+    }
+  }
+
+  &::before {
+    display: inline-block;
+    inline-size: 0.5em;
+    aspect-ratio: 1;
+    content: "";
+    border-block-end: 1px solid;
+    border-inline-end: 1px solid;
+    transition: rotate var(--duration);
+    transform-origin: center 0.35em;
+    rotate: 315deg;
+  }
+
+  &[aria-expanded="true"]::before {
+    rotate: 45deg;
+  }
+}
+
+@media (scripting: none) {
+  .panel:target {
+    display: revert;
+  }
+}
+.panel {
+  display: flex;
+}
+.page-question-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26.1px;
+  letter-spacing: 0.075em;
+  text-align: left;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.page-question-icon-a {
+  margin-top: 16px;
+  width: 24px;
+  height: 24px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 36px;
+  background-color: red;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26.1px;
+  letter-spacing: 0.075em;
+  text-align: left;
+}
+
+.page-question-icon-q {
+  width: 24px;
+  height: 24px;
+  padding-left: 6px;
+  margin-left: 16px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26.1px;
+  letter-spacing: 0.075em;
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+}
+.question-img {
+  margin-top: 32px;
+  margin-left: 48px;
+}

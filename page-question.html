@@ -39,8 +39,8 @@
     <meta name="theme-color" content="#fafafa" />
     <!-- script -->
     <script src="/js/hamburger.js" defer></script>
+    <script src="/js/accordion.js" defer></script>
   </head>
-
   <body>
     <header class="header">
       <div class="header-wrap">
@@ -324,49 +324,200 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="breadcrumb">ホーム　/　関連リンク集　</div>
+      <div class="breadcrumb">ホーム　/　よくあるご質問　</div>
       <div class="home-page-main">
         <div class="section-wrap-sub-sidebar">
-          <h1 class="page-publications-main-title">関連リンク集</h1>
+          <h1 class="page-publications-main-title">よくあるご質問</h1>
           <div class="page-publications-wrap2">
             <div class="page-publications-link1">
-              <a href="" class="page-publications-link1-a">国土交通省</a>
-            </div>
-            <div class="page-publications-link1">
-              <a href="" class="page-publications-link1-a"
-                >一般財団法人日本建築センター</a
+              <section
+                id="accordion1"
+                class="accordion"
+                aria-labelledby="title"
               >
+                <a class="button" href="#panel1" role="button">
+                  <span class="page-question-icon-q">Q</span
+                  >自走式駐車場とはどのような駐車場ですか？</a
+                >
+                <div id="panel1" class="panel" hidden="until-found">
+                  <p class="page-question-icon-a">A</p>
+                  <p class="page-question-text">
+                    駐車場利用者が自ら自動車を運転してスロープ等を利用して走行し、目的階の車室に駐車させる形式のものです。対して、動力を使用し駐車させるのは、機械式駐車場となります。<br />自走式駐車場は、自動車の昇降用スペースが必要となるため、900㎡以上のまとまった土地に適しています。また、最近では物販店舗や遊技場等の設備を１・２階に設け、上階を駐車場としたものもあります。
+                  </p>
+                </div>
+              </section>
             </div>
             <div class="page-publications-link1">
-              <a href="" class="page-publications-link1-a">日本建築行政会議</a>
-            </div>
-            <div class="page-publications-link1">
-              <a href="" class="page-publications-link1-a"
-                >一般財団法人建築行政情報センター</a
+              <section
+                id="accordion2"
+                class="accordion"
+                aria-labelledby="title"
               >
+                <a class="button" href="#panel2" role="button">
+                  <span class="page-question-icon-q">Q</span
+                  >自走式駐車場の国土交通大臣認定とは何ですか？</a
+                >
+                <div id="panel2" class="panel" hidden="until-found">
+                  <p class="page-question-icon-a">A</p>
+                  <p class="page-question-text">
+                    国土交通大臣の認定を受けた「1層2段型」から「6層7段型」までの立体駐車場となります。外周部に開放性を確保し、耐火被覆や防火区画等が不要となり、消防用設備等の設置が緩和となるため、経済的で品質の高い駐車場となります。<br />認定には、駐車場を構成する使用部材の種類、構成ユニットや部材配置のルール等を定めてシステム化し、構造及び防災の性能検証により安全を確保する「一般認定」と建築場所を限定し、個別案件毎に構造及び防災の性能検証により安全を確認する「個別認定」があります。
+                  </p>
+                </div>
+              </section>
             </div>
             <div class="page-publications-link1">
-              <a href="" class="page-publications-link1-a">日本建築検査協会</a>
-            </div>
-            <div class="page-publications-link1">
-              <a href="" class="page-publications-link1-a"
-                >一般財団法人日本建築防災協会</a
+              <section
+                id="accordion3"
+                class="accordion"
+                aria-labelledby="title"
               >
+                <a class="button" href="#panel3" role="button">
+                  <span class="page-question-icon-q">Q</span
+                  >自走式駐車場は建築確認申請を必要とするのでしょうか？</a
+                >
+                <div id="panel3" class="panel" hidden="until-found">
+                  <p class="page-question-icon-a">A</p>
+                  <p class="page-question-text">
+                    自走式駐車場は、建築基準法に建築物と定められており、建築に際しては建築確認申請が必要となります。過去には、基礎が無いことから土地に定着しない等を理由に建築物に該当しないと標榜して施工販売していますが、国土交通省建築指導課から建築物と判断する技術的助言が通知され、また、平成17年度には、違法建築物として神戸地裁から司法見解も出されています。<br />従って、このような基礎の無い駐車場を施工すると所轄の行政機関から、強制撤去等の指導をされます。
+                  </p>
+                </div>
+              </section>
             </div>
             <div class="page-publications-link1">
-              <a href="" class="page-publications-link1-a"
-                >公益社団法人立体駐車場工業会</a
+              <section
+                id="accordion4"
+                class="accordion"
+                aria-labelledby="title"
               >
+                <a class="button" href="#panel4" role="button">
+                  <span class="page-question-icon-q">Q</span
+                  >自走式駐車場に店舗を混在させることはできますか？</a
+                >
+                <div id="panel4" class="panel" hidden="until-found">
+                  <p class="page-question-icon-a">A</p>
+                  <p class="page-question-text">
+                    建物の1階及び2階に物販店舗や遊技場等の施設を設置し、その上階を自走式駐車場とした複合型のものを建築することが出来ます。独立した駐車場と同様に性能評価を受け、建物ごとに大臣認定を取得することになります。<br />大臣認定を取得する事で駐車場部分の耐火被覆が不要になり、防災設備の緩和が受けられコストダウンにつながります。<br />但し、施設部分には耐火被覆や防火区画等を施すことになります
+                  </p>
+                </div>
+              </section>
             </div>
             <div class="page-publications-link1">
-              <a href="" class="page-publications-link1-a"
-                >一般社団法人全日本駐車協会</a
+              <section
+                id="accordion5"
+                class="accordion"
+                aria-labelledby="title"
               >
+                <a class="button" href="#panel5" role="button">
+                  <span class="page-question-icon-q">Q</span
+                  >自走式駐車場の駐車可能車種の制限は？</a
+                >
+                <div id="panel5" class="panel" hidden="until-found">
+                  <p class="page-question-icon-a">A</p>
+                  <p class="page-question-text">
+                    収容車種は構造上、防耐火上の観点から、認定の条件として積載荷重は車輌総重量2トン又は2.5トンまでとなっています。積載荷重を超える自動車を収容することは認定の条件に適合しないため認められていません。
+                  </p>
+                </div>
+              </section>
             </div>
             <div class="page-publications-link1">
-              <a href="" class="page-publications-link1-a"
-                >一般社団法人日本パーキングビジネス協会</a
+              <section
+                id="accordion6"
+                class="accordion"
+                aria-labelledby="title"
               >
+                <a class="button" href="#panel6" role="button">
+                  <span class="page-question-icon-q">Q</span
+                  >自走式駐車場内に設置できる施設はありますか？</a
+                >
+                <div id="panel6" class="panel" hidden="until-found">
+                  <p class="page-question-icon-a">A</p>
+                  <p class="page-question-text">
+                    高層化や大型化に伴い、人用エレベーターの設置は必須となっております。その他、管理室、便所、オートバイ置き場、災害時の防災備蓄倉庫は認定の制限の範囲内で設置可能となっています。（オートバイ置き場と防災備蓄倉庫の設置は、大臣認定取得時の条件に含まれているものに限ります。）
+                  </p>
+                </div>
+              </section>
+            </div>
+            <div class="page-publications-link1">
+              <section
+                id="accordion7"
+                class="accordion"
+                aria-labelledby="title"
+              >
+                <a class="button" href="#panel7" role="button">
+                  <span class="page-question-icon-q">Q</span
+                  >自走式駐車場のメンテナンスはどのようなものが必要ですか？</a
+                >
+                <div id="panel7" class="panel" hidden="until-found">
+                  <p class="page-question-icon-a">A</p>
+                  <p class="page-question-text">
+                    機械式と比べ基本的には事故等による破損が無い限り躯体についてはメンテナンスフリーです。但し、エレベーターが付属される場合は保守点検が必要になってきます。また、消火設備については６ヵ月ごとの点検が消防法で定められています。その他は、照明設備の更新、駐車ラインの補修、床のひび割れチェック等が考えられます。
+                  </p>
+                </div>
+              </section>
+            </div>
+            <div class="page-publications-link1">
+              <section
+                id="accordion8"
+                class="accordion"
+                aria-labelledby="title"
+              >
+                <a class="button" href="#panel8" role="button">
+                  <span class="page-question-icon-q">Q</span
+                  >自走式駐車場の壁面や屋上を緑化させることは可能でしょうか？</a
+                >
+                <div id="panel8" class="panel" hidden="until-found">
+                  <p class="page-question-icon-a">A</p>
+                  <p class="page-question-text">
+                    景観との調和、環境保護等の観点から緑化を積極的に取り入れるケースは増えています。自走式立体駐車場での緑化は壁面での対応と、屋上を総て緑地ゾーンとするものまであり、個々の認定条件に適合させたり、また、場合によっては建築主事等の判断を仰ぐ必要があります。<br />なお、自走式駐車場は周囲が開放されていることが必要ですので、壁面緑化を行う場合は一定の開放を妨げないように配置することが必要です。
+                  </p>
+                </div>
+              </section>
+            </div>
+            <div class="page-publications-link1">
+              <section
+                id="accordion9"
+                class="accordion"
+                aria-labelledby="title"
+              >
+                <a class="button" href="#panel9" role="button">
+                  <span class="page-question-icon-q">Q</span
+                  >駐車場の収容効率はどうなりますか？</a
+                >
+                <div id="panel9" class="panel" hidden="until-found">
+                  <div>
+                    <div class="flex">
+                      <p class="page-question-icon-a">A</p>
+                      <p class="page-question-text">
+                        自走式駐車場はスロープ・通路を含めて１台あたり約25～30㎡程度の面積を必要とします。よって1,000㎡の自走式駐車場の場合で25㎡とすると、1層2段型では約80台、2層3段型で120台、3層4段型で160台の収容が見込めます。6層7段型では1フロア最大床面積である4,000㎡とした場合、1,000台以上の収容が可能となります。なお、用途地域等により建蔽率や容積率により、建築面積や延べ面積を制限しているため、考慮が必要です。駐車形式では連続傾床式はスロープを必要としない事からフラット式に比べ収容効率が高まります。
+                      </p>
+                    </div>
+                    <img src="/img/question1.png" alt="" class="question-img" />
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="page-publications-link1">
+              <section
+                id="accordion10"
+                class="accordion"
+                aria-labelledby="title"
+              >
+                <a class="button" href="#panel10" role="button">
+                  <span class="page-question-icon-q">Q</span
+                  >国土交通大臣認定の自走式駐車場は全国どこでも建築できるのでしょうか？</a
+                >
+                <div id="panel10" class="panel" hidden="until-found">
+                  <div>
+                    <div class="flex">
+                      <p class="page-question-icon-a">A</p>
+                      <p class="page-question-text">
+                        自走式駐車場は建築基準法上、自動車車庫として用途地域毎に定めた規模に応じて建築することができます。尚、用途地域毎の規模は以下のとおりとなります。
+                      </p>
+                    </div>
+                    <img src="/img/question2.png" alt="" class="question-img" />
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </div>
