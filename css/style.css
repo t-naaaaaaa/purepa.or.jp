@@ -71,6 +71,11 @@ a {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .all-button {
+    margin-top: 40px;
+  }
+}
 /* header */
 
 .header-sp-nav {
@@ -108,18 +113,26 @@ a {
   font-weight: 600;
   border-bottom: 1px solid #ffffff;
 }
-@media screen and (min-width: 1280px) {
+.header {
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+@media screen and (max-width: 1040px) {
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
   .header-logo-img {
     width: 260px;
     height: 48px;
   }
 
-  .header {
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 16px;
-    padding-bottom: 8px;
-  }
   .header-wrap {
     display: flex;
     justify-content: space-between;
@@ -164,7 +177,7 @@ a {
 }
 
 /* headerアイコン */
-@media screen and (min-width: 1279px) {
+@media screen and (min-width: 768px) {
   a[href*="#info"]:before {
     content: "";
     display: inline-block;
@@ -270,9 +283,7 @@ a {
 .drawer_hidden {
   display: none;
 }
-@media screen and (min-width: 768px) {
-}
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1040px) {
   .header-bottom-wrap {
     display: none;
   }
@@ -438,6 +449,11 @@ a {
   width: 800px;
   height: 500px;
 }
+@media screen and (max-width: 768px) {
+  .kv-slide-wrap img {
+    height: 520px;
+  }
+}
 .slide1 {
   /* スライドさせるために必要なクラス */
   transform: translateX(0);
@@ -507,7 +523,7 @@ a {
 }
 
 .kv-info {
-  max-width: 1040px;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
@@ -528,11 +544,10 @@ a {
   padding-left: 26px;
   font-size: 14px;
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 768px) {
   .kv-info {
     display: block;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 0 auto;
     border: 2px solid #ec0c19;
   }
   .kv-info-main {
@@ -541,6 +556,7 @@ a {
     line-height: 16.34px;
     letter-spacing: 0.075em;
     text-align: left;
+    border-right: none;
   }
 
   .kv-info-txt {
@@ -578,6 +594,7 @@ a {
 .attempt-sub-top-wrap {
   margin-bottom: 24px;
 }
+
 .attempt-sub-article-wrap {
   display: flex;
   justify-content: space-between;
@@ -612,18 +629,61 @@ a {
   color: #ec0c19;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 768px) {
   .attempt {
     padding: 64px 20px;
     margin-top: 0;
   }
-
+  .attempt-main-txt {
+    font-size: 14px;
+  }
   .attempt-main-kv-img {
-    width: 350px;
-    height: 233px;
     gap: 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
+  }
+  .attempt-sub-bottom-wrap {
+    display: none !important;
+  }
+  .attempt-sub-article-wrap {
+    display: block;
+  }
+  .attempt-sub-first {
+    width: 100%;
+    display: flex;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #efefef;
+  }
+  .attempt-sub {
+    display: flex;
+    margin-left: 0px;
+    width: 100%;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-bottom: 1px solid #efefef;
+  }
+  .attempt-sub-txt {
+    width: 100%;
+  }
+  .attempt-sub-txt-title {
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26.1px;
+    letter-spacing: 0.075em;
+    text-align: left;
+  }
+  .attempt-sub-img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .attempt-main-txt {
+    font-size: 12px;
+  }
+
+  .attempt-sub-txt-title {
+    font-size: 12px;
   }
 }
 
@@ -639,7 +699,6 @@ a {
 
 .daijin-wrap {
   display: flex;
-  height: 365px;
 }
 .daijin-main {
   width: 51%;
@@ -652,7 +711,7 @@ a {
   text-align: left;
 }
 
-.daijin-main-txt {
+.daijin-main-pc-txt {
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -668,7 +727,61 @@ a {
 .daijin-img-img {
   width: 516px;
 }
+.daijin-main-sp-txt {
+  display: none;
+}
 
+.detail-button-sp {
+  display: none;
+}
+
+@media screen and (max-width: 1279px) {
+  .daijin-wrap {
+    display: block;
+    height: 100%;
+  }
+  .daijin-main-pc-txt {
+    display: none;
+  }
+  .detail-button-pc {
+    display: none;
+  }
+  .daijin-img {
+    margin: 0;
+  }
+  .daijin-img-img {
+    width: 100%;
+  }
+  .daijin-main-sp-txt {
+    display: block;
+    margin-top: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26.1px;
+    letter-spacing: 0.075em;
+    text-align: left;
+  }
+  .detail-button-sp {
+    display: block;
+    width: 310px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .daijin {
+    padding: 40px 20px;
+  }
+  .daijin-main-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27.5px;
+    letter-spacing: 0.075em;
+    text-align: left;
+  }
+
+  .daijin-main {
+    display: block;
+  }
+}
 /* disaster */
 .disaster {
   padding-left: 120px;
@@ -677,16 +790,11 @@ a {
   padding-bottom: 120px;
 }
 
-@media screen and (max-width: 768px) {
-  .disaster {
-    display: none;
-  }
-}
-
 .disaster-wrap {
   border: 2px solid #efefef;
   padding: 40px;
 }
+
 .disaster-main {
   margin-bottom: 24px;
 }
@@ -699,10 +807,11 @@ a {
 }
 .disaster-sub-wrap {
   display: flex;
+  align-items: flex-start; /* 各要素を上端に揃える */
 }
-
 .disaster-sub-txt {
-  margin-left: 24px;
+  flex: 1; /* これも必要に応じて調整 */
+  padding-left: 24px; /* テキストとiframeの間に適切なスペースを確保 */
 }
 .disaster-sub-txt-detail {
   font-size: 14px;
@@ -712,9 +821,33 @@ a {
   text-align: left;
 }
 
-@media screen and (min-width: 1279px) {
+@media screen and (max-width: 1040px) {
   .disaster-sub-wrap {
     display: block;
+    text-align: center;
+  }
+  .disaster-sub-txt-detail {
+    margin-top: 24px;
+  }
+  .iframe-wrapper {
+    width: 100%; /* flex container 内で正しく表示されるように100%の幅を指定 */
+    flex: 1; /* flex items が利用可能な空間を均等に分ける */
+    padding-bottom: 56.25%; /* 16:9のアスペクト比 */
+    position: relative;
+    height: 0; /* 高さを0に設定し、paddingで調整 */
+  }
+
+  .iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .disaster {
+    padding: 40px 20px;
   }
 }
 
@@ -739,12 +872,14 @@ a {
 .information-tab-ul {
   display: flex;
   list-style: none;
+  justify-content: space-between;
   width: 100%;
   padding: 0;
   margin: 0;
 }
 .information-tab-li {
   display: flex;
+  width: 100%;
 }
 .information-tab-button {
   font-size: 14px;
@@ -753,7 +888,6 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   padding: 16px;
-  width: 50%;
   background-color: #fff;
   flex-grow: 1;
   border: none;
@@ -790,9 +924,34 @@ a {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 1280px) {
-  .information-tab-button {
-    width: 520px;
+@media screen and (max-width: 1039px) {
+  .information {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 24px;
+  }
+  .information-main-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.79px;
+    letter-spacing: 0.075em;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .information-date {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13.62px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+  .information-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26.1px;
+    letter-spacing: 0.075em;
+    text-align: left;
   }
 }
 /* mail_magazine */
@@ -860,12 +1019,19 @@ a {
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0.075em;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-
 .detail-button-wrap {
   padding-bottom: 22.5px;
 }
 
+@media screen and (max-width: 1039px) {
+  .mail_magazine {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 /* footer */
 
 .footer {
@@ -875,6 +1041,7 @@ a {
 
 .footer-logo-img {
   margin-right: 161px;
+  margin-bottom: 40px;
 }
 
 .footer-nav-title {
@@ -914,7 +1081,7 @@ a {
 .footer-nav-sub-li {
   margin-left: 24px;
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 768px) {
   .footer {
     padding: 40px 20px;
   }
