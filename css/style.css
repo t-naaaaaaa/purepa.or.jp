@@ -7,11 +7,14 @@ body {
   color: #0c0c0c;
   margin: 0 auto;
 }
-
 a {
   text-decoration: none;
 }
-
+@media screen and (max-width: 420px) {
+  html {
+    width: 110%;
+  }
+}
 /* Kv-slider */
 .image-gallery {
   overflow: hidden;
@@ -1175,7 +1178,7 @@ a {
 }
 .section-wrap-sidebar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .section-section-wrap {
@@ -1188,6 +1191,11 @@ a {
 .page-section-wrap {
   padding-top: 40px;
   padding-bottom: 104px;
+}
+@media screen and (max-width: 768px) {
+  .page-section-wrap {
+    padding-bottom: 64px;
+  }
 }
 .page-section-wrap-end {
   padding-bottom: 0 !important;
@@ -1257,7 +1265,17 @@ a {
   margin-left: 16px;
   margin-top: 16px;
 }
-
+.sp-text {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .section-text-wrap1 {
+    display: none;
+  }
+  .sp-text {
+    display: block;
+  }
+}
 .section-text-p-3 {
   font-size: 14px;
   font-weight: 400;
@@ -1295,6 +1313,7 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .section-text-p-7 {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -1307,21 +1326,32 @@ a {
   letter-spacing: 0.075em;
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  .section-text-p-6 {
+    min-width: 25%;
+  }
+  .section-text-p-7 {
+    min-width: 75%;
+    padding-right: 16px;
+  }
+}
 .section-text-p-8 {
-  display: block;
+  display: flex;
   min-width: 7%;
   font-size: 14px;
   font-weight: 400;
   line-height: 26.1px;
   letter-spacing: 0.075em;
-  text-align: left;
+  text-align: center;
+  align-items: center;
   padding-top: 10.5px;
   padding-bottom: 10.5px;
 }
 .section-text-p-9 {
   padding-top: 8px;
   padding-bottom: 8px;
-  display: block;
+  display: flex;
+  align-items: center;
   padding-left: 24px;
   min-width: 93%;
   font-size: 14px;
@@ -1329,6 +1359,17 @@ a {
   line-height: 26.1px;
   letter-spacing: 0.075em;
   text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .section-text-p-8 {
+    align-items: center;
+
+    min-width: 15%;
+  }
+  .section-text-p-9 {
+    min-width: 85%;
+    padding-right: 16px;
+  }
 }
 .section-text-p-10 {
   display: block;
@@ -1364,17 +1405,20 @@ a {
   letter-spacing: 0.075em;
   text-align: left;
 }
-.section-text-p-12 {
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26.1px;
-  letter-spacing: 0.075em;
-  text-align: left;
+@media screen and (max-width: 768px) {
+  .section-text-p-10{
+    min-width: 27%;
+  }
+  .section-text-p-11{
+    min-width: 73%;
+  }
+  .section-text-p-12 {
+    padding-right: 16px;
+  }
 }
 
 .section-table-img {
-  width: 111px;
+  width: 111px !important;
   height: 118px;
   gap: 0px;
   opacity: 0px;
@@ -1415,6 +1459,14 @@ a {
   display: flex;
   padding-bottom: 40px;
 }
+@media screen and (max-width: 768px) {
+  .section-member-wrap {
+    display: block;
+  }
+  .button-member{
+align-items: end;
+  }
+}
 .section-member-wrap2 {
   border-bottom: 2px solid #efefef;
 }
@@ -1449,7 +1501,6 @@ a {
   margin-top: 40px;
   margin-bottom: 24px;
 }
-
 /* page-parking */
 
 .page-park-section-wrap {
@@ -1589,6 +1640,7 @@ a {
   justify-content: space-between;
 }
 
+
 .page-park-textside-img {
   width: 254px;
   height: 170px;
@@ -1611,7 +1663,26 @@ a {
   margin-top: 24px;
   margin-bottom: 24px;
 }
+@media screen and (max-width: 768px) {
+  .section-img-wrap {
+    display: block;
+  }
+  .section-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .section-img-img {
+    display: flex;
+    justify-content: center;
+    width: 350px !important;
+    height: 100% !important;
 
+    gap: 0px;
+    opacity: 0px;
+  }
+}
 /* セルの横幅を設定 */
 .cell:first-child {
   width: 112px;
@@ -1711,6 +1782,11 @@ a {
   border-bottom: #000 1px solid;
 }
 
+@media screen and (max-width: 1040px) {
+  .section-sidebar {
+    display: none;
+  }
+}
 /* publications */
 
 .publications-sidebar-li {
@@ -1932,6 +2008,12 @@ a {
   color: #000;
   border-bottom: #000 1px solid;
 }
+@media screen and (max-width: 1279px) {
+  .page-main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 /* page-question */
 
@@ -1995,7 +2077,10 @@ a {
   }
 }
 .panel {
-  display: flex;
+  display: block;
+}
+.panel-member{
+  display: block;
 }
 .page-question-text {
   font-size: 14px;
