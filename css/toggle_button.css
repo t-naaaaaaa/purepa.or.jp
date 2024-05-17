@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*css*/
+/* :::::: toggle button :::::: */
+ 
+#navTgl {
+  display: none;
+}
+ 
+label.open,
+label.close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ 
+.open {
+  z-index: 2;
+  width: 50px;
+  height: 40px;
+  color: white;
+  background-color: #999;
+  font-size: 2em;
+  padding-top: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  -webkit-transition: background-color .6s, -webkit-transform .6s;
+  transition: background-color .6s, transform .6s;
+}
+ 
+#navTgl:checked + .open {
+  background-color: indianRed;
+  -webkit-transform: translateX(-250px);
+  transform: translateX(-250px);
+}
+ 
+.close {
+  pointer-events: none;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: background-color .6s;
+}
+ 
+#navTgl:checked ~ .close {
+  pointer-events: auto;
+}
+ 
+/* :::::: drawer menu :::::: */
+ 
+.menu {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform .6s;
+  transition: transform .6s;
+}
+ 
+#navTgl:checked ~ .menu {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+ 
+.menu p,
+.menu li a {
+  color: white;
+}
+ 
+.menu p {
+  text-align: center;
+}
+ 
+.menu ul {
+  padding: 0;
+  list-style-type:none;
+}
+ 
+.menu li {
+  border-bottom: 1px solid rgba(255,255,255,.6);
+  font-size: 13px;
+  line-height: 1.4;
+}
+ 
+.menu li:first-child {
+  border-top: 1px solid rgba(255,255,255,.6);
+}
+ 
+.menu li a {
+  display: block;
+  height: 37px;
+  line-height: 37px;
+  padding-left: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: background-color .6s;
+}
+ 
+.menu li a:hover {
+  background-color: black;
+}
+ 
